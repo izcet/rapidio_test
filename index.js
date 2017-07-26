@@ -1,7 +1,18 @@
+// ************************************************************************** //
+//                                                                            //
+//                                                        :::      ::::::::   //
+//   index.js                                           :+:      :+:    :+:   //
+//                                                    +:+ +:+         +:+     //
+//   By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+        //
+//                                                +#+#+#+#+#+   +#+           //
+//   Created: 2017/07/25 22:05:00 by irhett            #+#    #+#             //
+//   Updated: 2017/07/25 22:11:42 by irhett           ###   ########.fr       //
+//                                                                            //
+// ************************************************************************** //
+
 const rapid = require("rapid-io");
 const api = require("./api.key.json");
 const rapidClient = rapid.createClient(api.key);
-//console.log(api.key);
 
 function makePerson(fname, lname) {
 	var person = {
@@ -27,13 +38,20 @@ function makeTransaction(person1, person2, amount, tags) {
 	return transaction;
 }
 
-var foo = makePerson("billy", "bob");
+var user = makePerson("current", "user");
 
+var foo = makePerson("billy", "bob");
 var bar = makePerson("bobby", "bill");
+
+const transactions = rapidClient.collection('transactions');
+
+
+
 
 var trans = makeTransaction(foo, bar, 100, []);
 
 console.log(foo.toString());
 console.log(bar.toString());
 console.log(trans.toString());
-		
+
+
