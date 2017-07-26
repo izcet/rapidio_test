@@ -1,0 +1,19 @@
+{
+  "name": "rapidio",
+  "version": "1.0.0",
+  "description": "foo bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izcet/rapidio_test.git"
+  },
+  "author": "irhett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izcet/rapidio_test/issues"
+  },
+  "homepage": "https://github.com/izcet/rapidio_test#readme"
+}
