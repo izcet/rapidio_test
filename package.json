@@ -1,18 +1,22 @@
 {
-  "name": "hello_rapidio",
-  "version": "1.0.0",
-  "description": "A hello world project to get familiar with Rapid.io",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Chris Renfrow",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-google": "^0.9.1"
-  },
-  "dependencies": {
-    "rapid-io": "^0.4.1"
-  }
+    "name": "hello_rapidio",
+    "version": "1.0.0",
+    "description": "A hello world project to get familiar with Rapid.io",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Chris Renfrow & Isaac Rhett",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^4.3.0",
+        "eslint-config-google": "^0.9.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/izcet/rapidio_test.git"
+    },
+    "dependencies": {
+        "rapid-io": "^0.4.1"
+    }
 }
